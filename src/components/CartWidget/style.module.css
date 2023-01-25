@@ -1,0 +1,22 @@
+.container {
+  margin: 0px 12px;
+}
+.cart {
+  position: relative;
+  top: 10px;
+}
+.subnum {
+  position: relative;
+  font-size: 17px;
+  bottom: 33px;
+  left: 55%;
+  background: tomato;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2px;
+}

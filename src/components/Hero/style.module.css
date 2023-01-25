@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(90, 90, 71, 0.678),
+      rgba(174, 0, 255, 0.397)
+    ),
+    url("../../assets/book.jpg");
+  background-size: cover;
+  text-align: center;
+  margin: auto;
+}
+
+.text {
+  align-items: center;
+  padding-top: 115px;
+  color: rgb(231, 226, 226);
+}
+
+.text h3 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 25px;
+}
