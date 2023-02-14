@@ -1,19 +1,11 @@
-import {
-  Button,
-  Container,
-  Form,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
 import { ImPriceTags } from "react-icons/im";
 import CartWidget from "../CartWidget";
 
 function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="transparent sticky" expand="lg" className="border border-black">
       <Container fluid>
         <Navbar.Brand as={Link} to="/">
           <span className="text-center">
@@ -28,10 +20,10 @@ function NavBar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link as={Link} to="/books">
+            <Nav.Link as={Link} to="/products">
               Libros
             </Nav.Link>
-            <Nav.Link as={Link} to="/new">
+            <Nav.Link as={Link} to="/news">
               Novedades
             </Nav.Link>
             <Nav.Link as={Link} to="/about">
@@ -49,19 +41,8 @@ function NavBar() {
                 Drama
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/store" disabled>
-              Locales
-            </Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+
           <CartWidget />
         </Navbar.Collapse>
       </Container>

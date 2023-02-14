@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "../Hero";
-import ItemListContainer from "../ItemListContainer";
+import Hero from "../../components/Hero";
+import ItemListContainer from "../../components/ItemListContainer";
 
 function Home() {
   return (

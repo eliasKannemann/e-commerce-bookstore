@@ -1,6 +1,6 @@
 .container {
-  width: 100%;
-  height: 700px;
+  width: 80vw;
+  height: 70vh;
   background-image: linear-gradient(
       to bottom,
       rgba(90, 90, 71, 0.678),
